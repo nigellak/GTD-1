@@ -1,54 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no">
-    <title>HOME</title>
-    <link rel="stylesheet" href="custom/custom2.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    <script src="CSS/js/jquery-3.4.1.js"></script>
-    <script src="CSS/bs/boost/dist/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1">
+    <title>WebWork</title>
+    <link rel="stylesheet" href="custom/customthree.css">
+    <link href="BP/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="BP/js/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="BP/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div class="header">
-<!--    <nav class = "navbar navbar-expand-sm bg-secondary navbar-dark">-->
-<!--        <a class = "navbar-brand" href = "#">-->
-            <img src = "sawces/icon.png" alt="AH icon" width="20" height="20">
-<!--        </a>-->
-</div>
+<header class="header">
+    <nav class="navbar navbar-style" data-toggle="collapse">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand mr-3"> Aid Hospital</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggle-icon"></span>
+                <span class="navbar-toggle-icon"></span>
+                <span class="navbar-toggle-icon"></span>
+                <span class="navbar-toggle-icon"></span>
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <div class="navbar-header">
+                <img src="resawces/nk.jpg" class="logo" alt="logo">
+            </div>
+            <div class="collapse navbar-collapse" id="menu" >
 
-<div class="container">
-    <nav class="navbar navbar-expand-sm navbar-dark">
-<!--        <a class="navbar-brand" href="1.html">Navbar</a>-->
-        <div>
-            <ul>
-                <li class="active"><a href="1.html">Home</a></li>
-                <li><a href="registration.html">Registration</a></li>
-                <li><a href="2.html">Contact</a></li>
-                <li><a href="4.html">Records</a></li>
-                <li><a href="3.html">About</a></li>
+            </div>
+            <ul class="nav justify-content-end">
+
+                <li class="nav-item"><a class="nav-link" href="tut.html">Home</a></li>
+                <li class="nav-item" ><a class="nav-link active" href="1.html">Registration</a></li>
+                <li class="nav-item" ><a class="nav-link" href="2.html">Contact</a></li>
+                <li class="nav-item" ><a class="nav-link" href="4.html">Records</a></li>
+                <li class="nav-item" ><a class="nav-link" href="3.html">About</a></li>
             </ul>
+
         </div>
     </nav>
+    <div class="jumbotron text-center">
+        <h1>Welcome to Aid Hospital</h1>
+        <p>Addressing all your needs.</p>
+    </div>
+</header>
+
+<div class="register">
+    <div class="container1 col-sm-6" >
+        <h2>Patient Form:</h2>
+        <form action="#" class="needs-validation" novalidate>
+            <!--      /action_page.php      -->
+            <div class="form-group">
+                <label for="pid">Patient id:</label>
+                <input type="text" class="form-control" id="pid" placeholder="Enter patient id" name="pid" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" class="form-control" id="fname" placeholder="Enter first name" name="fname" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="sname">Surname:</label>
+                <input type="text" class="form-control" id="sname" placeholder="Enter surname" name="sname" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="mname">Middle name:</label>
+                <input type="text" class="form-control" id="mname" placeholder="Enter middle name" name="mname" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of birth:</label>
+                <input type="date" class="form-control" id="dob" placeholder="Enter date of birth" name="dob" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="gnd">Gender:</label>
+                <input type=" " class="form-control" id="gnd" placeholder="Choose gender" name="gnd" required>
+                <!--            <select name="" id="gender">-->
+                <!--                <option value="female">Female</option>-->
+                <!--                <option value="male">Male</option>-->
+                <!--            </select>-->
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <!--        <div class="form-group form-check">-->
+            <!--            <label class="form-check-label">-->
+            <!--                <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.-->
+            <!--                <div class="valid-feedback">Valid.</div>-->
+            <!--                <div class="invalid-feedback">Check this checkbox to continue.</div>-->
+            <!--        </div>-->
+<!--
+1 	Mombasa
+2 	Kwale
+3 	Kilifi
+4 	Tana River
+5 	Lamu
+6 	Taita–Taveta
+7 	Garissa
+8 	Wajir
+9 	Mandera
+10 	Marsabit
+11 	Isiolo
+12 	Meru
+13 	Tharaka-Nithi
+14 	Embu
+15 	Kitui
+16 	Machakos
+17 	Makueni
+18 	Nyandarua
+19 	Nyeri
+20 	Kirinyaga
+21 	Murang'a
+22 	Kiambu
+23 	Turkana
+24 	West Pokot
+25 	Samburu
+26 	Trans-Nzoia
+27 	Uasin Gishu
+28 	Elgeyo-Marakwet
+29 	Nandi
+30 	Baringo
+31 	Laikipia
+32 	Nakuru
+33 	Narok
+34 	Kajiado
+35 	Kericho
+36 	Bomet
+37 	Kakamega
+38 	Vihiga
+39 	Bungoma
+40 	Busia
+41 	Siaya
+42 	Kisumu
+43 	Homa Bay
+44 	Migori
+45 	Kisii 
+46 	Nyamira
+47 	Nairobi
+	         -->
+            <button type="submit" class="btn btn-primary">Clear</button>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
+    <div class="container2 col-sm-6">
+        <h2> Next of Kin Form:</h2>
+        <form action="#" class="needs-validation" novalidate>
+            <!--       /action_page.php     -->
+            <div class="form-group">
+                <label for="pid">Patient id:</label>
+                <input type="text" class="form-control" id="pid" placeholder="Enter patient id" name="pid" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" class="form-control" id="fname" placeholder="Enter first name" name="fname" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="sname">Surname:</label>
+                <input type="text" class="form-control" id="sname" placeholder="Enter surname" name="sname" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="mname">Middle name:</label>
+                <input type="text" class="form-control" id="mname" placeholder="Enter middle name" name="mname" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of birth:</label>
+                <input type="date" class="form-control" id="dob" placeholder="Enter date of birth" name="dob" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Clear</button>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
 </div>
 
-<!--<p>-->
-<!--    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque aut autem cum debitis delectus, dolore ducimus eligendi expedita magni maiores modi nemo placeat quas reiciendis repellendus sed similique vitae?</span><span>Ducimus optio quibusdam voluptatem! Accusantium animi aperiam aut consectetur debitis delectus, doloribus ea eligendi enim eveniet ex exercitationem expedita hic id ipsam laborum, laudantium minus officiis possimus quia quod sunt.</span><span>Aspernatur iusto maxime nisi pariatur quo. Amet animi autem commodi dolorem in incidunt magni mollitia nam necessitatibus nulla officiis omnis quis, reprehenderit saepe tempore ut, voluptate. Nihil officia quibusdam voluptatum.</span>-->
-<!--</p>-->
-<!--<p>-->
-<!--    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum nisi praesentium quod reprehenderit ullam. Atque, corporis dolore, in maxime molestiae mollitia non praesentium, sequi sunt ut voluptates voluptatum. Molestiae, obcaecati.</span><span>Asperiores assumenda dicta dolore, doloremque ducimus, eligendi esse facilis inventore iste magni minima, natus numquam officia pariatur possimus sunt voluptates voluptatum? Dolorum in iusto minus molestiae nihil quia quibusdam sed.</span><span>Debitis id laboriosam molestias natus suscipit. Ab, ad alias atque deleniti deserunt eaque eligendi esse inventore ipsum nemo odit possimus quasi quibusdam quod ratione similique sit tenetur, veritatis vitae voluptatum.</span>-->
-<!--</p>-->
 
-<div class="footer">
-   <p>copyright 2019 AH.</p>
-</div>
+<script>
+    // Disable form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
 
+<footer>
+    <div class="footer">
+        <p> &copy;2019.Copyright:AH.</p>
+        <p> Find us at: 75019 Wilma Drive Nakuru.</p>
+        <p>Contact information: nigellaorina@yahoo.com.</p>
+    </div>
+
+</footer>
 </body>
 </html>
-
-<!--
-bootstrap.css/bootstrap.min.css
-<!--    <script src="CSS/js/jquery-3.4.1.js"></script>-->
-<!--    <script src="CSS/bs/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>-->
--->
